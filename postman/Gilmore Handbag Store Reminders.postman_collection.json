@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "32d520ab-ae06-49a2-8c26-e20b071a800b",
+    "name": "Gilmore Handbag Store Reminders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": \"handbag-001\",\n  \"reminderDate\": \"2024-12-01T10:00:00Z\",\n  \"userEmail\": \"lee.gilmore@something.com\",\n  \"message\": \"Reminder to purchase this handbag before the holiday sale ends\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-api-id.execute-api.your-region.amazonaws.com/api/v1/reminders/",
+          "protocol": "https",
+          "host": [
+            "your-rest-api-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["api", "v1", "reminders", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}
